@@ -20,7 +20,7 @@ const assertArraysEqual = function(actual, expected) {
 };
 */
 const middle = function(array) {
-  let array_result = [];
+  let array_result = []; //Initialize it to empty array
   if (array.length <= 2 && array.length > 0) {
     // For arrays with one or two elements, there is no middle. Return an empty array.
     return array_result;
