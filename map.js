@@ -30,10 +30,34 @@ const map = function(array, callback) {
   return results;
 }
   
-const results1 = map(words, word => word[0]);
+const results1 = map(words, word => word[0]); 
+//original array = words
+//callback = function == creates a new array "results1" without affecting the original array "words"
 console.log(results1);
-console.log(assertArraysEqual(results1,[ 'g', 'c', 't', 'm', 't' ]));
+console.log(assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']));
 
 const results2 = map(words2, word1 => word1[2]);
 console.log(results2);
-console.log(assertArraysEqual(results2,[ 'e', 'i', 'a']));
+assertArraysEqual(results2, ['e', 'i', 'a']);
+
+
+/* NOTE : the map() method does not make any changes to the array you're mapping.
+But, it creates a new array with the changes made. 
+So in order to access the new array that you got from map(),
+you need to assign the mapped array to a new variable say, newDays like this:
+
+example:
+const coffee_words = ["house", "blend", "roast"];
+coffee_words.map(function(coffee_element) {
+  console.log(coffee_element[0]);
+});
+
+const coffee_words = ["house", "blend", "roast"];
+coffee_words.forEach((coffee_element) => {
+  console.log(coffee_element[4]);
+});
+
+/* //to remember//
+forEach() - affects and changes our original Array.
+map() - returns an entirely new Array, thus leaving the original array unchanged.
+*/

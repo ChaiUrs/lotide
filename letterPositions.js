@@ -12,7 +12,7 @@ const eqArrays = function(array1, array2) {
     return false;
   }
   for (let i = 0; i < array1.length; i++) {
-    if (array1 [i] !== array2[i]) {
+    if (array1[i] !== array2[i]) {
       return false;
     }
   }
@@ -20,16 +20,16 @@ const eqArrays = function(array1, array2) {
 };
 
 const letterPositions = function(string) {
-  let output_letter_positions = {};
+  let output = {};
   let words = string.split(' ').join('');
-  for (let i = 0; i < words.length; i++) {
-    if (output_letter_positions[words[i]]) {
-      output_letter_positions[words[i]].push(i);
+  for (let i in words) {
+    if (output[words[i]]) {
+      output[words[i]].push(i);
     } else {
-      output_letter_positions[words[i]] = [i];
+      output[words[i]] = [i];
     }
   }
-  return output_letter_positions;
-}
+  return output;
+};
 console.log(letterPositions("lighthouse in the house"));
-assertArraysEqual(letterPositions("hello").e, [1]);
+assertArraysEqual(letterPositions("lighthouse in the house").l, [0]);
