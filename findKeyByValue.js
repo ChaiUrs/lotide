@@ -1,9 +1,9 @@
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed : ${actual} === ${expected}`);
+    console.log(`✅ Assertion Passed : ${actual} === ${expected}`);
   } else {
-    console.log(`🛑🛑🛑 Assertion Failed : ${actual} !== ${expected}`);
+    console.log(`🛑 Assertion Failed : ${actual} !== ${expected}`);
   }
 };
 
@@ -21,6 +21,7 @@ const findKeyByValue = function(obj, obj_value) {
     }
   }
 };
+
 console.log(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"));
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), undefined);
