@@ -1,4 +1,4 @@
-
+/*
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -18,6 +18,7 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`🛑 Assertion Failed : ${actual} !== ${expected}`);
   }
 };
+*/
 
 const middle = function(array) {
   let array_result = []; //Initialize it to empty array
@@ -38,4 +39,5 @@ console.log(middle([1, 2, 3]));
 console.log(middle([1, 2, 3, 4, 5]));
 console.log(middle([1, 2, 3, 4]));
 console.log(middle([1, 2, 3, 4, 5, 6]));
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
+
+module.exports = middle;
