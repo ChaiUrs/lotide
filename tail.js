@@ -34,8 +34,11 @@ const tail = function(arr) {
     return [];
   }
 };
+
+module.exports = tail;
+
+/*
 const words =  [ "Yo Yo", "Lighthouse", "Labs" ];
 console.log(tail(words));
 console.log(tail(words).length);
-
-module.exports = tail;
+*/
