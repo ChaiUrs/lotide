@@ -23,6 +23,6 @@ const assertArraysEqual = function(array1, array2) {
   }
   return (`✅ Assertion Passed : ${array1} === ${array2}`);
 };
-console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]));
+//console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]));
 
 module.exports = assertArraysEqual;

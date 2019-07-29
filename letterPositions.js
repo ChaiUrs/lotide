@@ -1,4 +1,4 @@
-
+/*
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected) === true) {
     console.log(`✅ Assertion Passed : ${actual} === ${expected}`);
@@ -18,6 +18,7 @@ const eqArrays = function(array1, array2) {
   }
   return true;
 };
+*/
 
 const letterPositions = function(string) {
   let output = {};
@@ -31,5 +32,5 @@ const letterPositions = function(string) {
   }
   return output;
 };
-console.log(letterPositions("lighthouse in the house"));
-assertArraysEqual(letterPositions("lighthouse in the house").l, [0]);
+
+module.exports = letterPositions;
