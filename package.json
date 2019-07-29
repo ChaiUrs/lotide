@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@chai_urs/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the Lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,10 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/ChaiUrs/lotide.git"
   },
-  "author": "",
+  "author": "Chaitra Urs",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ChaiUrs/lotide/issues"
   },
-  "homepage": "https://github.com/ChaiUrs/lotide#readme"
+  "homepage": "https://github.com/ChaiUrs/lotide#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
 }
