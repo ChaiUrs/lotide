@@ -2,4 +2,8 @@
 const assertArraysEqual = require('../assertArraysEqual');
 const middle = require('../middle');
 
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
+describe("#middle", () => {
+  it("should return [2, 3] for [1, 2, 3, 4]", () => {
+    assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
+  });
+});
